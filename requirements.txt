@@ -1,0 +1,13 @@
+pytesseract
+pillow
+mirascope
+groq
+google-generativeai
+streamlit
+pyMuPDF
+scikit-learn
+transformers
+torch
+nltk
+pandas
+tenacity
