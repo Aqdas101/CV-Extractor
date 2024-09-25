@@ -1,12 +1,7 @@
----
-title: CV Extractor
-emoji: 🏆
-colorFrom: green
-colorTo: indigo
-sdk: streamlit
-sdk_version: 1.37.0
-app_file: app.py
-pinned: false
----
+# LLM Resume Extractor & Recommendor 
+## This project aim is to convert pdf resumes in structured tabular format and using Machine Learning Algorithirm Recommend CV based on the job description.
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+To run application 
+```bash
+streamlit run app.py
+```

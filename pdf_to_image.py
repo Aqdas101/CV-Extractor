@@ -1,5 +1,6 @@
 import fitz  # PyMuPDF
 from PIL import Image
+from io import BytesIO
 
 def pdf_to_image(pdf_files, dpi=300):
     print('Start -- Getting images from PDF')
@@ -19,6 +20,3 @@ def pdf_to_image(pdf_files, dpi=300):
         pdf_images.append(images)
         print('End -- Getting Images from PDF \n\n')
     return pdf_images
-
-
-

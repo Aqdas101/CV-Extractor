@@ -48,7 +48,6 @@ job_description = st.sidebar.text_input('Enter Job Description')
 
 if uploaded_files and job_description:
     if st.sidebar.button('AI Recommendation'):
-
         try:
             image_bytes = pdf_to_image(uploaded_files)
         except Exception as e:
@@ -96,6 +95,7 @@ if uploaded_files and job_description:
         cv_df = pd.DataFrame(all_cvs, columns=[
             'name', 'email', 'phone_number', 'skills', 'education', 'past_company_experience', 'about_section'
         ])
+        cv_df.to_csv('check_test.csv')
         try:
             recommend_df = recommend_resume(cv_df, job_description)
         except Exception as e:
